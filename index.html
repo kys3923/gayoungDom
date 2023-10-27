@@ -1,7 +1,93 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    <script type="text/javascript" src="script.js" defer></script>
   </head>
-  <body></body>
-</html>
+  <body>
+    <p>HTML forms</p>
+    
+    <form method="EDIT">
+      <!-- 이름 -->
+      <div>
+        <label labelFor="name">
+          name
+        </label>
+        <input type="text" name="name" id="name" value="" />
+      </div>
+      
+      <!-- 성별 -->
+      <div>
+        <h6>성별</h6>
+        <label labelFor="male">
+          남성
+        </label>
+        <input type="radio" name="gender" value="남성" id="male" />
+        <label labelFor="female">
+          여성
+        </label>
+        <input type="radio" name="gender" value="여성" id="female" />
+      </div>
+      
+      <!-- 학력 -->
+      <div>
+        <input type="checkbox" id="high" name="high" value="highSchool" />
+        <label labelFor="high">
+          고등학교
+        </label>
+        <input type="checkbox" id="college" name="college" value="college" />
+        <label lableFor="college">
+          대학교
+        </label>
+      </div>
+      
+      <!-- 신청 날짜 -->
+      <div>
+        <label lableFor="date">
+          신청날짜
+        </label>
+        <input type="date" id="date" name="date" />
+      </div>
+      
+      <!-- 이메일 -->
+      <div>
+        <label lableFor='email'>Email</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      
+      <!-- 퍼센트 -->
+      <div>
+        <label lableFor="percent">Percent</label>
+        <input type="range" id="percent" name='percent' />
+      </div>
+      
+      <!-- 좋아하는색 -->
+      <div>
+        <label lableFor="color">Favorite Color</label>
+        <input type="color" id="color" name="color" />
+      </div>
+      
+      <!-- password -->
+      <div>
+        <label lableFor="password">Password</label>
+        <input type="password" id="password" name="password" />
+      </div>
+      
+      <button id="submit">Submit</button>
+    </form>
+
+  </body>
+  </html>
+
+  <!-- RESTful API type (HTML)
+  
+  GET //데이터를 받을때
+  POST //데이터를 등록할때 보내줄때
+  EDIT //데이터를 고칠때 수정
+  DELETE //데이터를 없앨때
+
+  (backend CRUD create, read, update, delete)
+  .get
+  .post
+  .put(edit) -edit
+  .patch(edit) 덮어씌우기
+  .delete -->
