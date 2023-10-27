@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   button1.addEventListener('click', (e) => {
     e.preventDefault(); //refresh를 방지함
-    console.log(name.cehcked, 'button clicked')
+    console.log(name.value, 'button clicked')
   })
 
 })
