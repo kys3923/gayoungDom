@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js" defer></script>
   </head>
   <body>
     <container>
-      <div>
+      <div class="topBox">
         <input type="number" id="textInput" placeholder="Enter your primary input"/>
-
-        <input type="radio" name="temp" id="cel" value="cel" />
-        <label labelFor="temp">
-          Celcius to Fahrenheit
-        </label>
-        <input type="radio" name="temp" id="far" value="far" />
-        <label labelFor="temp">
-          Fahrenheit to Celcius
-        </label>
+        <div>
+          <input type="radio" name="temp" id="cel" value="cel" />
+          <label labelFor="temp">
+            Celcius to Fahrenheit
+          </label>
+        </div>
+        <div>
+          <input type="radio" name="temp" id="far" value="far" />
+          <label labelFor="temp">
+            Fahrenheit to Celcius
+          </label>
+        </div>
         <button id="button">Change!</button>
       </div>
       <div>
