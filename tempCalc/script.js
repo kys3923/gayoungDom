@@ -46,7 +46,7 @@ const display = (option, result) => {
 
   let shortenedNum = result.toFixed(3)
   if(option === 'cel') {
-    return `${shortenedNum} F`
+    return `${shortenedNum} F` 
   }
 
   if(option === 'far') {
