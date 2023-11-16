@@ -61,10 +61,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (validate === 'ageError') {
       window.alert('age is 15 and up only')
     }
-    
+
     if (validate === 'sexError') {
       window.alert('please select your gender')
     }
 
   })
 })
+
+//숙제 
+// 계정을 만들때 쓰이는 등록 페이지를 만드시오
+// 1. email
+// 2. password
+// 3. password confirm
+// 4. 하고 싶은 정보를 아무거나 2개더 
+
+// validate all information
+// css 적용시키기
